@@ -1,0 +1,27 @@
+# Secrets and local config — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+.msal_token_cache*
+
+# Claude Code personal/local files
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/agent-memory-local/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# macOS / editors
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
